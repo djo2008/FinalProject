@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota Cars with Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #333; /* Dark grey background color */
+      color: #fff; /* White text color */
+    }
+
+    nav {
+      backdrop-filter: blur(10px); 
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Center items vertically */
+      border-radius: 0%;
+      background-color: transparent;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .logo {
+      max-width: 100px; /* Adjust the width of the logo as needed */
+      height: auto;
+    }
+
+    nav a {
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .car {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 28%; /* Adjust the width as needed for spacing */
+    }
+
+    .car img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .technical-sheet,
+    .reviews {
+      margin-top: 20px;
+      background-color: #555;
+      padding: 15px;
+    }
+
+    #video-ad {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="toyota_logo.png" alt="Toyota Logo" class="logo">
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Models</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+    </div>
+    <img src="toyota_logo.png" alt="Toyota Logo" class="logo">
+  </nav>
+
+  <!-- Video Ad Section at the Top -->
+  <section>
+    <video autoplay muted>
+      <source src="https://res.cloudinary.com/dpx3r96pd/video/upload/v1701604191/Showroom/Outlive_the_Day_Toyota_z9xl3d.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>About Toyota</h2>
+    <p>Toyota is a renowned automotive manufacturer known for its reliable and fuel-efficient vehicles.</p>
+  </section>
+
+  <section>
+
+    <div class="car">
+      <h3>Toyota Camry</h3>
+      <img src="camry.png" alt="Toyota Camry">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 2.5L 4-Cylinder</li>
+          <li>Horsepower: 203 HP</li>
+          <li>Transmission: 8-speed automatic</li>
+          <li>Drive Type: Front-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Camry offers a smooth and comfortable ride. It's a great choice for daily commuting."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota RAV4</h3>
+      <img src="rav4.png" alt="Toyota RAV4">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 2.5L 4-Cylinder</li>
+          <li>Horsepower: 203 HP</li>
+          <li>Transmission: 8-speed automatic</li>
+          <li>Drive Type: Front-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota RAV4 combines style with versatility. It's a reliable SUV for both city and off-road adventures."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota Land Cruiser 300</h3>
+      <img src="land_cruiser_300.png" alt="Toyota Land Cruiser 300">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 3.5L Twin-Turbo V6</li>
+          <li>Horsepower: 409 HP</li>
+          <li>Transmission: 10-speed automatic</li>
+          <li>Drive Type: Four-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Land Cruiser 300 offers power and performance for off-road enthusiasts. It's a true adventurer's choice."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota Prado</h3>
+      <img src="prado.png" alt="Toyota Prado Land Cruiser TX">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 2.8L 4-Cylinder Diesel</li>
+          <li>Horsepower: 201 HP</li>
+          <li>Transmission: 6-speed automatic</li>
+          <li>Drive Type: Four-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Prado Land Cruiser TX combines luxury with ruggedness. It's an ideal choice for those seeking both comfort and adventure."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota Land Cruiser 79</h3>
+      <img src="land_cruiser_79.png" alt="Toyota Land Cruiser 79">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 4.5L V8 Diesel</li>
+          <li>Horsepower: 202 HP</li>
+          <li>Transmission: 5-speed manual</li>
+          <li>Drive Type: Four-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Land Cruiser 79 is a robust and reliable choice for heavy-duty tasks. It's a workhorse on and off the road."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota Corolla</h3>
+      <img src="corolla.png" alt="Toyota Corolla">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 1.8L 4-Cylinder</li>
+          <li>Horsepower: 139 HP</li>
+          <li>Transmission: Continuously Variable Transmission (CVT)</li>
+          <li>Drive Type: Front-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Corolla is a reliable and fuel-efficient sedan. It's a popular choice for everyday driving."</p>
+      </div>
+    </div>
+
+    <div class="car">
+      <h3>Toyota Tundra</h3>
+      <img src="tundra.png" alt="Toyota Tundra">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 5.7L V8</li>
+          <li>Horsepower: 381 HP</li>
+          <li>Transmission: 6-speed automatic</li>
+          <li>Drive Type: Four-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Tundra is a powerful and reliable full-size pickup truck. It excels in towing and off-road capabilities."</p>
+      </div>
+    </div>
+
+    <!-- Add Toyota Tacoma -->
+    <div class="car">
+      <h3>Toyota Tacoma</h3>
+      <img src="tacoma.png" alt="Toyota Tacoma">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 3.5L V6</li>
+          <li>Horsepower: 278 HP</li>
+          <li>Transmission: 6-speed automatic</li>
+          <li>Drive Type: Rear-Wheel Drive or Four-Wheel Drive</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"The Toyota Tacoma is a versatile midsize pickup known for its durability and off-road prowess. It's a top choice for adventure seekers."</p>
+      </div>
+    </div>
+        <!-- Add Toyota Yaris -->
+        <div class="car">
+          <h3>Toyota Yaris</h3>
+          <img src="yaris.png" alt="Toyota Yaris">
+          <div class="technical-sheet">
+            <h4>Technical Sheet</h4>
+            <ul>
+              <li>Engine: 1.5L 4-Cylinder</li>
+              <li>Horsepower: 106 HP</li>
+              <li>Transmission: 6-speed automatic</li>
+              <li>Drive Type: Front-Wheel Drive</li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h4>Reviews</h4>
+            <p>"The Toyota Yaris is a compact and efficient sedan. It's ideal for city driving with its nimble handling and fuel efficiency."</p>
+          </div>
+        </div>
+    
+        <!-- Add Toyota Yaris Cross -->
+        <div class="car">
+          <h3>Toyota Yaris Cross</h3>
+          <img src="yaris_cross.png" alt="Toyota Yaris Cross">
+          <div class="technical-sheet">
+            <h4>Technical Sheet</h4>
+            <ul>
+              <li>Engine: 1.5L 3-Cylinder Hybrid</li>
+              <li>Horsepower: 116 HP</li>
+              <li>Transmission: Continuously Variable Transmission (CVT)</li>
+              <li>Drive Type: Front-Wheel Drive or All-Wheel Drive</li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h4>Reviews</h4>
+            <p>"The Toyota Yaris Cross is a stylish and eco-friendly crossover. It combines the versatility of an SUV with the efficiency of a hybrid."</p>
+          </div>
+        </div>
+            <!-- Add Toyota Hilux -->
+    <div class="car">
+      <h3>Toyota Hilux</h3>
+      <img src="hilux.png" alt="Toyota Hilux">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: [Hilux Engine Specs]</li>
+          <li>Horsepower: [Hilux Horsepower]</li>
+          <li>Transmission: [Hilux Transmission]</li>
+          <li>Drive Type: [Hilux Drive Type]</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"[Hilux Review]"</p>
+      </div>
+    </div>
+
+    <!-- Add Toyota Highlander -->
+    <div class="car">
+      <h3>Toyota Highlander</h3>
+      <img src="highlander.png" alt="Toyota Highlander">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: [Highlander Engine Specs]</li>
+          <li>Horsepower: [Highlander Horsepower]</li>
+          <li>Transmission: [Highlander Transmission]</li>
+          <li>Drive Type: [Highlander Drive Type]</li>
+        </ul>
+      </div>
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <p>"[Highlander Review]"</p>
+      </div>
+    </div>
+    <div class="car">
+      <h3>Toyota Corolla Cross</h3>
+      <img src="corrolla cross.png" alt="Toyota Corolla Cross">
+      <div class="technical-sheet">
+        <h4>Technical Sheet</h4>
+        <ul>
+          <li>Engine: 2.0L 4-Cylinder</li>
+          <li>Horsepower: 169 HP</li>
+          <li>Transmission: Continuously Variable Transmission (CVT)</li>
+          <li>Drive Type: Front-Wheel Drive or All-Wheel Drive</li>
+        </ul>
+      </div>
+  </section>
+
+  <section>
+    <h2>About Toyota</h2>
+    <p>Toyota is a global automotive company that has been at the forefront of the industry for decades. With a commitment to innovation, reliability, and sustainability, Toyota has become a household name synonymous with quality vehicles.</p>
+    <p>From fuel-efficient sedans to rugged off-road trucks, Toyota offers a diverse range of vehicles to meet the needs of drivers around the world. The brand is known for its advanced safety features, cutting-edge technology, and a focus on environmental responsibility through hybrid and electric vehicle options.</p>
+    <p>Founded in 1937, Toyota has grown to become one of the largest automakers globally, consistently pushing the boundaries of what is possible in the automotive industry. With a rich history of iconic models and a dedication to continuous improvement, Toyota remains a trusted choice for drivers seeking reliable, efficient, and innovative vehicles.</p>
+  </section>
+
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>For inquiries and test drives, please contact us at info@toyota.com</p>
+  </section>
+
+</body>
+</html>
