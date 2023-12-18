@@ -6,10 +6,10 @@
   <title>Toyota Cars with Video</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif; 
       margin: 0;
-      background-color: #333; /* Dark grey background color */
-      color: #fff; /* White text color */
+      background-color: #000000; 
+      color: #fff; 
     }
 
     nav {
@@ -20,7 +20,7 @@
       right: 0;
       display: flex;
       justify-content: space-between;
-      align-items: center; /* Center items vertically */
+      align-items: center; 
       border-radius: 0%;
       background-color: transparent;
       padding: 20px;
@@ -28,7 +28,7 @@
     }
 
     .logo {
-      max-width: 100px; /* Adjust the width of the logo as needed */
+      max-width: 100px; 
       height: auto;
     }
 
@@ -42,34 +42,70 @@
       font-size: 14px;
     }
 
-    section {
-      padding: 20px;
+    .section2 {
+      margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      gap: 40px;
     }
 
     .car {
       text-align: center;
       margin-bottom: 20px;
-      width: 28%; /* Adjust the width as needed for spacing */
+      width: 28%;
+      height: 750px;
+      border: 1px solid #9c9c9c;
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+      cursor: pointer;
+      overflow: hidden;
+      background-color: #555;
+    }
+    
+    .car:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .car img {
-      max-width: 100%;
-      height: auto;
+     width: 100%;
+     height: 300px;
     }
 
     .technical-sheet,
     .reviews {
-      margin-top: 20px;
-      background-color: #555;
+      
       padding: 15px;
     }
 
     #video-ad {
       width: 100%;
     }
+    .text-ui-brand-color {
+    color:goldenrod(--ui-brand-color)!important;
+  }
+  
+  .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+          }
+          .contact {
+      background-color: #baa36c; 
+      padding: 50px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #000;
+    }
+
+    .contact p {
+      color: #000;
+    }
+          
   </style>
 </head>
 <body>
@@ -85,20 +121,19 @@
     <img src="toyota_logo.png" alt="Toyota Logo" class="logo">
   </nav>
 
-  <!-- Video Ad Section at the Top -->
-  <section>
-    <video autoplay muted>
-      <source src="https://res.cloudinary.com/dpx3r96pd/video/upload/v1701604191/Showroom/Outlive_the_Day_Toyota_z9xl3d.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
 
-  <section>
-    <h2>About Toyota</h2>
-    <p>Toyota is a renowned automotive manufacturer known for its reliable and fuel-efficient vehicles.</p>
-  </section>
+   <section class="section1">
+        <div class="video-overlay"></div>
+        <video autoplay muted  id="video-ad">
+            <source
+                src="https://res.cloudinary.com/dpx3r96pd/video/upload/v1701604191/Showroom/Outlive_the_Day_Toyota_z9xl3d.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="unmuteButton" onclick="toggleMute()">Unmute</button>
+    </section>
 
-  <section>
+  <section class="section2">
 
     <div class="car">
       <h3>Toyota Camry</h3>
@@ -117,7 +152,6 @@
         <p>"The Toyota Camry offers a smooth and comfortable ride. It's a great choice for daily commuting."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota RAV4</h3>
       <img src="rav4.png" alt="Toyota RAV4">
@@ -135,7 +169,6 @@
         <p>"The Toyota RAV4 combines style with versatility. It's a reliable SUV for both city and off-road adventures."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota Land Cruiser 300</h3>
       <img src="land_cruiser_300.png" alt="Toyota Land Cruiser 300">
@@ -153,7 +186,6 @@
         <p>"The Toyota Land Cruiser 300 offers power and performance for off-road enthusiasts. It's a true adventurer's choice."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota Prado</h3>
       <img src="prado.png" alt="Toyota Prado Land Cruiser TX">
@@ -171,7 +203,6 @@
         <p>"The Toyota Prado Land Cruiser TX combines luxury with ruggedness. It's an ideal choice for those seeking both comfort and adventure."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota Land Cruiser 79</h3>
       <img src="land_cruiser_79.png" alt="Toyota Land Cruiser 79">
@@ -189,7 +220,6 @@
         <p>"The Toyota Land Cruiser 79 is a robust and reliable choice for heavy-duty tasks. It's a workhorse on and off the road."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota Corolla</h3>
       <img src="corolla.png" alt="Toyota Corolla">
@@ -207,7 +237,6 @@
         <p>"The Toyota Corolla is a reliable and fuel-efficient sedan. It's a popular choice for everyday driving."</p>
       </div>
     </div>
-
     <div class="car">
       <h3>Toyota Tundra</h3>
       <img src="tundra.png" alt="Toyota Tundra">
@@ -225,8 +254,6 @@
         <p>"The Toyota Tundra is a powerful and reliable full-size pickup truck. It excels in towing and off-road capabilities."</p>
       </div>
     </div>
-
-    <!-- Add Toyota Tacoma -->
     <div class="car">
       <h3>Toyota Tacoma</h3>
       <img src="tacoma.png" alt="Toyota Tacoma">
@@ -244,7 +271,6 @@
         <p>"The Toyota Tacoma is a versatile midsize pickup known for its durability and off-road prowess. It's a top choice for adventure seekers."</p>
       </div>
     </div>
-        <!-- Add Toyota Yaris -->
         <div class="car">
           <h3>Toyota Yaris</h3>
           <img src="yaris.png" alt="Toyota Yaris">
@@ -288,17 +314,17 @@
       <div class="technical-sheet">
         <h4>Technical Sheet</h4>
         <ul>
-          <li>Engine: [Hilux Engine Specs]</li>
-          <li>Horsepower: [Hilux Horsepower]</li>
-          <li>Transmission: [Hilux Transmission]</li>
-          <li>Drive Type: [Hilux Drive Type]</li>
+          <li>Engine: [2.8L 4 cylinders]</li>
+          <li>Horsepower: [201 HP]</li>
+          <li>Transmission: [automatic 7 gears]</li>
+          <li>Drive Type: [4WD]</li>
         </ul>
       </div>
       <div class="reviews">
         <h4>Reviews</h4>
-        <p>"[Hilux Review]"</p>
+        <p>"The Toyota Hilux is a rugged and reliable pickup truck known for its durability and off-road prowess. With a reputation for sturdy build quality, ample cabin space, and strong towing capabilities, the Hilux is a popular choice for those seeking a dependable workhorse. While its ride comfort may be firm, its robust performance and reliability make it a standout in its class.          "</p>
       </div>
-    </div>
+    </div>  
 
     <!-- Add Toyota Highlander -->
     <div class="car">
@@ -307,43 +333,55 @@
       <div class="technical-sheet">
         <h4>Technical Sheet</h4>
         <ul>
-          <li>Engine: [Highlander Engine Specs]</li>
-          <li>Horsepower: [Highlander Horsepower]</li>
-          <li>Transmission: [Highlander Transmission]</li>
-          <li>Drive Type: [Highlander Drive Type]</li>
+          <li>Engine: [2.4 4 cylinders]</li>
+          <li>Horsepower: [265-hp]</li>
+          <li>Transmission: [automatic 8 gears]</li>
+          <li>Drive Type: [AWD]</li>  
         </ul>
       </div>
       <div class="reviews">
         <h4>Reviews</h4>
-        <p>"[Highlander Review]"</p>
+        <p>The Toyota Highlander is a versatile SUV that combines comfort and performance. With a powerful engine and advanced features, it provides a smooth and enjoyable driving experience. The spacious interior and advanced safety technology make it an excellent choice for families. Whether you're on a daily commute or a road trip, the Highlander delivers on both style and substance.</p>
       </div>
     </div>
-    <div class="car">
-      <h3>Toyota Corolla Cross</h3>
-      <img src="corrolla cross.png" alt="Toyota Corolla Cross">
-      <div class="technical-sheet">
-        <h4>Technical Sheet</h4>
-        <ul>
-          <li>Engine: 2.0L 4-Cylinder</li>
-          <li>Horsepower: 169 HP</li>
-          <li>Transmission: Continuously Variable Transmission (CVT)</li>
-          <li>Drive Type: Front-Wheel Drive or All-Wheel Drive</li>
-        </ul>
-      </div>
   </section>
 
-  <section>
-    <h2>About Toyota</h2>
-    <p>Toyota is a global automotive company that has been at the forefront of the industry for decades. With a commitment to innovation, reliability, and sustainability, Toyota has become a household name synonymous with quality vehicles.</p>
-    <p>From fuel-efficient sedans to rugged off-road trucks, Toyota offers a diverse range of vehicles to meet the needs of drivers around the world. The brand is known for its advanced safety features, cutting-edge technology, and a focus on environmental responsibility through hybrid and electric vehicle options.</p>
-    <p>Founded in 1937, Toyota has grown to become one of the largest automakers globally, consistently pushing the boundaries of what is possible in the automotive industry. With a rich history of iconic models and a dedication to continuous improvement, Toyota remains a trusted choice for drivers seeking reliable, efficient, and innovative vehicles.</p>
-  </section>
+  <section class="about">
+    <div class="about-content">
+        <span class="text-ui-brand-color" style="color:#baa36c"><span
+                style="font-weight:bold">ABOUT TOYOTA</span></span>
+        <p>Toyota is a global automotive company that has been a pioneer in the industry for decades. Committed to
+            innovation, reliability, and sustainability, Toyota has become synonymous with quality vehicles.</p>
+        <p>Offering a diverse range of vehicles, from fuel-efficient sedans to rugged off-road trucks, Toyota caters
+            to the diverse needs of drivers worldwide. Renowned for its advanced safety features, cutting-edge
+            technology, and a strong focus on environmental responsibility through hybrid and electric vehicle
+            options.</p>
+        <p>Founded in 1937, Toyota has evolved into one of the largest automakers globally, consistently pushing
+            the boundaries of what is possible in the automotive industry. With a rich history of iconic models and a
+            dedication to continuous improvement, Toyota remains the trusted choice for drivers seeking reliable,
+            efficient, and innovative vehicles.</p>
+    </div>
+</section>
 
+<section class="contact">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>For inquiries and test drives, please contact us at <a href="mailto:info@toyota.com">info@toyota.com</a></p>
+    </div>
+</section>
+<script>
+  var video = document.getElementById('video-ad');
+  var unmuteButton = document.getElementById('unmuteButton');
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>For inquiries and test drives, please contact us at info@toyota.com</p>
-  </section>
-
+  function toggleMute() {
+    if (video.muted) {
+      video.muted = false;
+      unmuteButton.innerHTML = 'Mute';
+    } else {
+      video.muted = true;
+      unmuteButton.innerHTML = 'Unmute';
+    }
+  }
+</script>
 </body>
 </html>
